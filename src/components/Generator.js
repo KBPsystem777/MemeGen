@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { LazyImage } from "react-lazy-images";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const MeMeUrl = "https://api.imgflip.com/get_memes";
 
@@ -20,8 +21,8 @@ function Generator() {
       {memes.map((meme) => (
         <ol>
           <div className="container">
-            <LazyImage
-              loadEagerly
+            <LazyLoadImage
+              effect="blur"
               key={meme.id}
               src={meme.url}
               className="img-fluid"
