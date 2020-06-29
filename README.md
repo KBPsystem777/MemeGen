@@ -1,5 +1,5 @@
 # MemeGen
 
-Another meme generator site.
+Top 100 Meme of the week
 
 https://mig-memes.now.sh
